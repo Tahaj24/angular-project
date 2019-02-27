@@ -1,0 +1,13 @@
+<div *ngIf="hero" class="card">
+  <div class=" card-header card-header-primary">
+  <h2>{{hero.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{hero.id}}</div>
+  <div >
+    <label>name:
+      <input [(ngModel)]="hero.name" placeholder="name" class="detail-ip"/>
+    </label>
+  </div>
+  <button (click)="goBack()">go back</button>
+  <button (click)="save()">save</button>
+  </div>
+</div>

@@ -1,0 +1,37 @@
+<!-- <h1>{{title}}</h1>
+<nav class="menu-bar">
+  <a routerLink="/dashboard">Dashboard</a>
+  <a routerLink="/heroes">Heroes</a>
+</nav>
+-->
+<div class="sidebar" data-color="purple" data-background-color="black" data-image="../assets/img/sidebar-2.jpg">
+  <!--
+    Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
+
+    Tip 2: you can also add an image using data-image tag
+-->
+  <div class="logo">
+    <a href="http://www.creative-tim.com" class="simple-text logo-normal">
+      Tour of Heroes
+    </a>
+  </div>
+  <div class="sidebar-wrapper menu-bar">
+    <ul class="nav">
+      <li class="nav-item active  ">
+        <a class="nav-link" routerLink="/dashboard">
+          <i class="material-icons">dashboard</i>
+          <p>Dashboard</p>
+        </a>
+      </li>
+      <li class="nav-item nav-item-one active ">
+        <a class="nav-link" routerLink="/heroes">
+          <i class="material-icons" style="margin-top: -5px;
+          margin-left: 6px;">Heroes</i>
+          <p>Heroes</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+<router-outlet></router-outlet>
+<app-messages></app-messages>

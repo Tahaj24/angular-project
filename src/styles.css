@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+.body{
+    margin:10px;
+    background-color: #3c4858;
+}
+.content {
+    width: 80%;
+    margin-left: 272px;
+}
+.dark-edition .card {
+    background: #202940;
+}

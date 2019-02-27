@@ -1,0 +1,41 @@
+/* AppComponent's private CSS styles */
+h1 {
+  font-size: 1.2em;
+  color: #999;
+  margin-bottom: 0;
+}
+h2 {
+  font-size: 2em;
+  margin-top: 0;
+  padding-top: 0;
+}
+nav a {
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #eee;
+  border-radius: 4px;
+}
+nav a:visited, a:link {
+  color: #9c27b0;
+}
+nav a:hover {
+  color: #039be5;
+  background-color: #9c27b0;
+}
+nav a.active {
+  color: #039be5;
+}
+.menu-bar a {
+  padding: 0px 40px;
+  margin-left: 5px;
+  margin-top: -10px;
+}
+.nav-item-one{
+  margin: 20px 0px 0px 10px
+}
+li.active[_ngcontent-c0] > a[nav-link] {
+  background-color: #9c27b0;
+  box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(156, 39, 176, 0.4);
+}

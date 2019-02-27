@@ -1,0 +1,60 @@
+<h2>My Heroes</h2>
+
+<div class="card">
+  <div class="card-header card-header-primary">
+    <label><h4 class="card-title">Hero name:</h4>
+      <input #heroName />
+    </label>
+    <button (click)="add(heroName.value); heroName.value=''">
+        add
+    </button>
+   </div> 
+  <!-- (click) passes input value to add() and then clears the input -->
+</div>  
+<!-- </div>
+<div class="collection" *ngFor="let hero of heroes"
+[class.selected]="hero === selectedHero"
+(click)="onSelect(hero)" >
+
+  <a href="#!" class="collection-item" ><span class="new badge">{{hero.id}}</span>{{hero.name}}</a>
+  
+  </div> -->
+          
+<!-- <ul class="heroes">
+  <li *ngFor="let hero of heroes">
+    <a routerLink="/detail/{{hero.id}}">
+      <span class="badge">{{hero.id}}</span> {{hero.name}}
+    </a>
+    <button class="delete" title="delete hero"
+      (click)="delete(hero)">x</button>
+  </li>
+</ul> -->
+
+<div class="col-lg-6 col-md-12">
+  <div class="card">
+    <div class="card-header card-header-primary">
+      <h4 class="card-title">List Of Heroes</h4>
+    </div>
+    <div class="card-body table-responsive">
+      <table class="table table-hover">
+        <thead class="text-warning">
+          <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Delete</th>
+        </tr></thead>
+        <tbody>
+          <tr *ngFor="let hero of heroes">
+            <td>{{hero.id}}</td>
+            <td>{{hero.name}}</td>
+            <td><button class="delete" title="delete hero"
+              (click)="delete(hero)">x</button></td>
+              <!-- <td><button type="button" rel="tooltip" title="" class="btn btn-white btn-link btn-sm" data-original-title="Remove">
+                <i class="material-icons">close</i>
+              </button></td>   -->
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
