@@ -41,12 +41,14 @@
           <tr>
           <th>ID</th>
           <th>Name</th>
+          <th>Rating</th>
           <th>Delete</th>
         </tr></thead>
         <tbody>
           <tr *ngFor="let hero of heroes">
             <td>{{hero.id}}</td>
             <td>{{hero.name}}</td>
+            <td>{{hero.rating}}</td>
             <td><button class="delete" title="delete hero"
               (click)="delete(hero)">x</button></td>
               <!-- <td><button type="button" rel="tooltip" title="" class="btn btn-white btn-link btn-sm" data-original-title="Remove">
